@@ -1,5 +1,6 @@
 import streamlit as st
 import base64
+from PIL import Image
 
 def displayGIFOLD():
    file_ = open("./images/dragonball.gif", "rb")
@@ -20,7 +21,7 @@ def displayGif():
       st.write("")
 
    with col2:
-      st.image("images\dragonball.gif", width=500, caption="(dragon ball is one of my favorite shows!)")
+      st.image("dragonball.gif", width=500, caption="(dragon ball is one of my favorite shows!)")
 
    with col3:
       st.write("")
